@@ -1,0 +1,13 @@
+div.mainMenu {
+  display: flex;
+  overflow-x: auto;
+}
+
+@media screen and (min-device-width: 769px) {
+  .mainMenu {
+    width: 70%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

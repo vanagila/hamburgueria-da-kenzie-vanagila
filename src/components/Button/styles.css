@@ -1,0 +1,17 @@
+.defaultButton {
+  width: 105px;
+  height: 40px;
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  border-radius: 8px;
+  padding: 0 20px 0 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 10px 10px 10px;
+}
+
+.defaultButton:hover {
+  background-color: var(--color-primary-50);
+  border: 2px solid var(--color-primary-50);
+}

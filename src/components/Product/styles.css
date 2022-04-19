@@ -1,0 +1,76 @@
+div.productCard {
+  width: 300px;
+  background-color: var(--grey-0);
+  border: 2px solid var(--grey-20);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.productCard:hover {
+  border: 2px solid var(--grey-100);
+}
+
+.productCard figure {
+  height: 150px;
+  text-align: center;
+}
+
+.productCard img {
+  width: 177px;
+  height: 177px;
+}
+
+div.productCardMain {
+  height: 196px;
+  background-color: #ffffff;
+}
+
+.productCardMain h3 {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--grey-100);
+  padding-top: 26px;
+  padding-left: 21px;
+}
+
+.productCardMain p {
+  font-size: 12px;
+  color: var(--grey-50);
+  padding-left: 22px;
+}
+
+.productCardMain span {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-primary);
+  padding-left: 22px;
+}
+
+.addButton {
+  margin-top: 14px;
+  margin-left: 20px;
+  width: 104px;
+  height: 40px;
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  border-radius: 8px;
+  padding: 0 20px 0 20px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.addButton:hover {
+  background-color: var(--color-primary-50);
+  border: 2px solid var(--color-primary-50);
+}
+
+/* RESPONSIVO */
+
+@media screen and (min-device-width: 769px) {
+  .productCard {
+    height: 380px;
+    margin-right: 20px;
+  }
+}

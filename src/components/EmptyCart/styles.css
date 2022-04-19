@@ -1,0 +1,34 @@
+div.emptyCart_content {
+  width: 384px;
+  height: 223px;
+  background-color: var(--grey-0);
+}
+
+div.emptyCart_header {
+  background-color: var(--color-primary);
+  height: 65px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.emptyCart_header h3 {
+  color: #ffffff;
+  padding: 22px 0 13px 21px;
+}
+
+div.emptyCart_main {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.emptyCart_main h3 {
+  color: var(--grey-100);
+}
+
+.emptyCart_main p {
+  color: var(--grey-50);
+  font-size: 14px;
+}
+
+@media screen and (min-device-width: 769px) {
+}
