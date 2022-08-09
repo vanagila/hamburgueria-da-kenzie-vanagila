@@ -1,12 +1,13 @@
 import Logo from "../img/logo.png";
 import { Button } from "../Button/Button";
+import { Product } from "../Product";
 import "./styles.css";
 
 export const Header = ({ inputProduct, setInputProduct, showProducts }) => {
   return (
-    <div className="headerContent">
+    <div className="headerContainer">
       <div className="logo">
-        <img src={Logo} />
+        <img src={Logo} alt="logo" />
       </div>
       <div className="searchBar">
         <input

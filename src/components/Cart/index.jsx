@@ -5,17 +5,14 @@ import { CartContent } from "../CartContent";
 export const Cart = ({
   currentSale,
   setCurrentSale,
-  cartTotal,
-  setCartTotal,
   removeProduct,
   removeAllProducts,
+  totalPrice,
 }) => {
   return (
-    <div className="cart">
-      <div className="cartHeader">
-        <h3>Carrinho de compras</h3>
-      </div>
-      <div>
+    <div className="cartContainer">
+      <h3>Carrinho de compras</h3>
+      <div className="cart">
         {currentSale.map((sale, id) => {
           return (
             <CartContent
@@ -30,7 +27,7 @@ export const Cart = ({
       </div>
       <div className="cartFooter">
         <p>Total</p>
-        <span>R$ {cartTotal}</span>
+        <span>R$ {totalPrice}</span>
 
         <Button
           className="removeAllButton"

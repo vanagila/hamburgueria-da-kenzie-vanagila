@@ -54,15 +54,14 @@ function App() {
 
   const [filteredProducts, setFilteredProducts] = useState(products);
   const [currentSale, setCurrentSale] = useState([]);
-  const [cartTotal, setCartTotal] = useState(0);
   const [inputProduct, setInputProduct] = useState([]);
 
   const showProducts = (inputProduct) => {
+    inputProduct = inputProduct.toLocaleLowerCase();
     const newProductList = products.filter(
       (product) =>
-        product.name.toLocaleLowerCase() === inputProduct.toLocaleLowerCase() ||
-        product.category.toLocaleLowerCase() ===
-          inputProduct.toLocaleLowerCase()
+        product.name.toLocaleLowerCase() === inputProduct ||
+        product.category.toLocaleLowerCase() === inputProduct
     );
     setFilteredProducts(newProductList);
   };
@@ -73,7 +72,6 @@ function App() {
     if (prod === undefined) {
       setCurrentSale([...currentSale, item]);
     }
-    setCartTotal(cartTotal + item.price);
   };
 
   const removeProduct = (productId) => {
@@ -83,12 +81,15 @@ function App() {
     );
 
     setCurrentSale(newCartList);
-    setCartTotal(cartTotal - item.price);
   };
+
+  const totalPrice = currentSale.reduce(
+    (previousValue, currentValue) => previousValue + currentValue.price,
+    0
+  );
 
   const removeAllProducts = () => {
     setCurrentSale([]);
-    setCartTotal(0);
   };
 
   return (
@@ -98,21 +99,23 @@ function App() {
           inputProduct={inputProduct}
           setInputProduct={setInputProduct}
           showProducts={showProducts}
+          setFilteredProducts={setFilteredProducts}
+          products={products}
+          handleClick={handleClick}
         />
       </header>
 
       <div className="container">
         <MenuContainer products={filteredProducts} handleClick={handleClick} />
-        {cartTotal === 0 ? (
+        {totalPrice === 0 ? (
           <EmptyCart />
         ) : (
           <Cart
             currentSale={currentSale}
             setCurrentSale={setCurrentSale}
-            cartTotal={cartTotal}
-            setCartTotal={setCartTotal}
             removeProduct={removeProduct}
             removeAllProducts={removeAllProducts}
+            totalPrice={totalPrice}
           />
         )}
       </div>

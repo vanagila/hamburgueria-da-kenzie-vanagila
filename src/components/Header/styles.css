@@ -1,18 +1,22 @@
-div.logo {
-  padding-top: 14px;
-  padding-bottom: 14px;
+.headerContainer {
+  height: 120px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--grey-0);
 }
 
 .searchBar {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
-  height: 60px;
+  align-items: center;
+  height: 50px;
+  width: 288px;
   background-color: #ffffff;
   border: 2px solid var(--grey-20);
   border-radius: 8px;
-  margin-left: 16px;
-  margin-right: 16px;
 }
 
 .searchBar:focus {
@@ -21,27 +25,26 @@ div.logo {
 
 .searchBar input {
   border: none;
+  border-radius: 10px;
+  outline: 0;
+  width: 170px;
 }
 
 input::placeholder {
   color: var(--grey-20);
   font-size: 16px;
-  padding-left: 15px;
 }
 
 /*RESPONSIVO*/
 
 @media screen and (min-device-width: 769px) {
-  div.headerContent {
-    margin-left: 115px;
-    margin-right: 115px;
-    display: flex;
+  .headerContainer {
+    height: 80px;
+    padding-left: 105px;
+    padding-right: 105px;
+    flex-direction: row;
     justify-content: space-between;
-  }
-
-  .logo {
-    margin-top: 19px;
-    margin-bottom: 23px;
+    align-items: baseline;
   }
 
   .searchBar {

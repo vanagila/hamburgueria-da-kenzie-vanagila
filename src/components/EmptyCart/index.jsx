@@ -2,13 +2,11 @@ import "./styles.css";
 
 export const EmptyCart = () => {
   return (
-    <div className="emptyCart_content">
-      <div className="emptyCart_header">
-        <h3>Carrinho de compras</h3>
-      </div>
-      <div className="emptyCart_main">
-        <h3>Sua sacola está vazia</h3>
-        <p>Adicione itens</p>
+    <div className="wrapper">
+      <h3>Carrinho de compras</h3>
+      <div className="content">
+        <p>Sua sacola está vazia</p>
+        <span>Adicione itens</span>
       </div>
     </div>
   );

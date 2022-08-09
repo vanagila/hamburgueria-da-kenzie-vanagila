@@ -1,7 +1,7 @@
 div.productCardCart {
   display: flex;
   align-items: center;
-  width: 343px;
+  width: 288px;
   height: 80px;
   margin-top: 20px;
   padding: 20px 18px 20px 18px;
@@ -20,7 +20,7 @@ div.imgCart {
 
 .infoCart {
   padding-left: 10px;
-  padding-right: 32px;
+  width: 100px;
 }
 
 .infoCart h4 {

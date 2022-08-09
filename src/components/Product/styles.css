@@ -23,6 +23,7 @@ div.productCard {
 
 div.productCardMain {
   height: 196px;
+  border-radius: 5px;
   background-color: #ffffff;
 }
 
@@ -59,6 +60,7 @@ div.productCardMain {
   color: #ffffff;
   font-size: 14px;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .addButton:hover {

@@ -1,27 +1,30 @@
-div.cart {
-  width: 384px;
-  background-color: var(--grey-0);
-}
-
-div.cartHeader {
+.cartContainer {
+  width: 288px;
+  height: 314px;
   background-color: var(--color-primary);
-  height: 65px;
+  overflow-y: auto;
+  overflow-x: hidden;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
 
-.cartHeader h3 {
-  color: #ffffff;
-  padding: 22px 0 13px 21px;
+.cartContainer h3 {
+  color: var(--white);
+  padding-left: 20px;
 }
 
-div.cartFooter {
+.cart {
+  background-color: var(--grey-0);
+}
+
+.cartFooter {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: baseline;
-  margin-left: 18px;
-  margin-right: 18px;
+  padding-left: 18px;
+  padding-right: 18px;
+  background-color: var(--grey-0);
 }
 
 .cartFooter p {
@@ -39,7 +42,7 @@ div.cartFooter {
 }
 
 .removeAllButton {
-  width: 343px;
+  width: 252px;
   height: 60px;
   color: var(--grey-50);
   border-radius: 8px;

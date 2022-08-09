@@ -8,10 +8,26 @@
   font-size: 14px;
   font-weight: 500;
   color: #ffffff;
-  margin: 10px 10px 10px;
+  margin-right: 5px;
+  cursor: pointer;
 }
 
 .defaultButton:hover {
+  background-color: var(--color-primary-50);
+  border: 2px solid var(--color-primary-50);
+}
+
+.seeAllButton {
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  border-radius: 8px;
+  height: 30px;
+  width: 90px;
+  padding: 5px;
+  color: #ffffff;
+}
+
+.seeAllButton:hover {
   background-color: var(--color-primary-50);
   border: 2px solid var(--color-primary-50);
 }
